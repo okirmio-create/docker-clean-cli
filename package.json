@@ -1,0 +1,42 @@
+{
+  "name": "docker-clean-cli",
+  "version": "1.0.0",
+  "description": "Smart Docker cleanup tool — analyze and reclaim disk space",
+  "type": "module",
+  "bin": {
+    "docker-clean-cli": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "docker",
+    "cleanup",
+    "disk-space",
+    "cli",
+    "devops"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okirmio-create/docker-clean-cli"
+  }
+}
